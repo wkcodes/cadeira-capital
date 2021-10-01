@@ -1,0 +1,110 @@
+:root {
+  --color-primary: black;
+  --color-secondary: #ffcccc;
+  --color-accent: #ee7ea9;
+
+  --color-neutral-100: #fff;
+  --color-neutral-900: #222c2a;
+
+  --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-accent: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-accent);
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  max-height: 25em;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header,
+section {
+    padding: 3rem 0;
+}
+
+.site__button {
+  color: black;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 70.5rem;
+}
+
+.container__narrow {
+  max-width: 35rem;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+
+@media (max-width: 40em) {
+  .logo {
+
+  }
+  .panel__img {
+    height: 20rem;
+  }
+  .image__container {
+    text-align: center;
+  }
+}
+
+.bg-light {
+  background-color: var(--color-primary);
+}
+.bg-dark {
+  background-color: var(--color-secondary);
+}
+.bg-pink {
+  background-color: var(--color-accent);
+}

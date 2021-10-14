@@ -2,9 +2,7 @@
   --color-primary: black;
   --color-secondary: #ffcccc;
   --color-accent: #ee7ea9;
-
-  --color-neutral-100: #fff;
-  --color-neutral-900: #222c2a;
+  --color-offwhite: ghostwhite;
 
   --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-accent: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
@@ -54,7 +52,7 @@ section {
 }
 
 .site__button {
-  color: black;
+ 
 }
 
 .container {
@@ -75,6 +73,11 @@ section {
 .panel2 {
   display: flex;
   flex-direction: column;
+}
+
+.footer {
+  color: whitesmoke;
+  text-align: center;
 }
 
 @media (min-width: 40em) {
@@ -124,4 +127,7 @@ section {
 }
 .bg-pink {
   background-color: var(--color-accent);
+}
+.bg-white {
+  background-color: var(--color-offwhite);
 }

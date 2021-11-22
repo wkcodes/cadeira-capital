@@ -42,17 +42,32 @@ img {
   margin-bottom: 2rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
 header,
 section {
     padding: 3rem 0;
 }
 
-.site__button {
- 
+.strobe{
+  animation: myColorStrobe 1s infinite;
+}
+
+.bouncy__strobe{
+  animation: myBounce 2s infinite, myColorStrobe 1s infinite;
+}
+
+@keyframes myBounce{
+  0% {transform: translateY(20px);}
+  50% {transform: translateY(50px);}
+  100% {transform: translateY(20px);}
+
+}
+
+@keyframes myColorStrobe {
+  0%  {color: aquamarine;}
+  25%  {color:floralwhite;}
+  50%   {color: #ee7ea9;}
+  75%  {color:lightgrey}
+  100% {color:var(--color-accent)}
 }
 
 .container {
@@ -108,9 +123,6 @@ section {
 
 
 @media (max-width: 40em) {
-  .logo {
-
-  }
   .panel__img {
     height: 20rem;
   }

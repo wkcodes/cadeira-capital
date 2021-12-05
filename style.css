@@ -18,7 +18,7 @@
 body {
   font-family: var(--font-family-primary);
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: grid gap 10px;
   background-color: var(--color-primary);
 }
@@ -31,31 +31,37 @@ h3 {
   font-size: 1em;
 }
 
+header {
+  height: 100vh;
+  color: whitesmoke;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  gap: 3vw;
+}
+
 #logo-container {
   margin-right: auto;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  margin-top: 0.5rem;
-  margin-left: 4rem;
-  margin-right: 5rem;
-  gap: 2rem;
-}
-
-.nav__item {
-}
-
 #logo {
   margin: 1rem;
-  height: 6rem;
+  height: 5rem;
   width: 3rem;
 }
 
-header {
-  height: 100vh;
-  color: whitesmoke;
+#hero {
+  padding-top: 17rem;
+  text-align: center;
+}
+
+.nav__item {
 }
 
 img {

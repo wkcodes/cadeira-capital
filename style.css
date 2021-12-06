@@ -13,13 +13,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
 }
 
 body {
   font-family: var(--font-family-primary);
   font-weight: 400;
   font-size: 18px;
-  display: grid gap 10px;
   background-color: var(--color-primary);
 }
 
@@ -146,7 +146,11 @@ section {
 
 @media (max-width: 1000px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+  h2,
+  h3 {
+    font-size: 1.2rem;
   }
   #logo {
     margin: 0.5rem;
@@ -154,6 +158,8 @@ section {
   }
   nav {
     padding-left: 2px;
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
   .nav__item {
     display: none;

@@ -18,7 +18,7 @@
 body {
   font-family: var(--font-family-primary);
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 18px;
   display: grid gap 10px;
   background-color: var(--color-primary);
 }
@@ -27,8 +27,8 @@ h1,
 h2,
 h3 {
   font-family: var(--font-family-accent);
-  margin-bottom: 1em;
-  font-size: 1em;
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
 header {
@@ -37,12 +37,10 @@ header {
 }
 
 nav {
-  position: fixed;
-  width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   gap: 3vw;
 }
 
@@ -53,15 +51,16 @@ nav {
 #logo {
   margin: 1rem;
   height: 5rem;
-  width: 3rem;
+  width: 12rem;
 }
 
 #hero {
-  padding-top: 17rem;
+  padding-top: 28vh;
   text-align: center;
 }
 
 .nav__item {
+  font-size: 1.5rem;
 }
 
 img {
@@ -145,18 +144,22 @@ section {
   }
 }
 
-@media (max-width: 40em) {
+@media (max-width: 1000px) {
   h1 {
     font-size: 1.5rem;
   }
   #logo {
-    height: 4rem;
+    margin: 0.5rem;
+    width: 9rem;
+  }
+  nav {
+    padding-left: 2px;
   }
   .nav__item {
     display: none;
   }
   .panel__img {
-    height: 20rem;
+    height: 18rem;
   }
   .image__container {
     text-align: center;

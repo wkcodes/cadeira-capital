@@ -25,18 +25,21 @@ body {
   background-color: var(--color-primary);
 }
 
-h1,
+main {
+  display: grid;
+  grid-template-rows: 100vh 50vh 50vh 50vh 15vh;
+  border: solid;
+  border-color: red;
+}
+
+h1 {
+  font-size: 5rem;
+}
 h2,
 h3 {
   font-family: var(--font-family-accent);
   margin-bottom: 2rem;
   font-size: 3rem;
-}
-
-.panel-text-body {
-  color: var(--font-color-panels);
-  font-size: 125%;
-  text-align: center;
 }
 
 header {
@@ -47,6 +50,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  align-content: flex-start;
   margin-left: 15vw;
   margin-right: 15vw;
   gap: 3vw;
@@ -71,13 +75,63 @@ nav {
   font-size: 1.5rem;
 }
 
-img {
-  max-width: 100%;
-  max-height: 25em;
+.btn {
+  font-size: 1.5rem;
+  color: coral;
+  background-color: green;
+  width: 12rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 3.5rem;
+}
+
+.feature__panel {
+  max-width: 70.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+}
+
+.feature__panel__reverse {
+  max-width: 70.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-self: center;
+}
+
+.feature__panel__content__divider {
+  margin: 0.5rem;
+  background: var(--color-primary);
+  height: 0.2rem;
+}
+
+.panel-text-body {
+  color: var(--font-color-panels);
+  font-size: 125%;
+  text-align: center;
+}
+
+.panel__img {
+  max-height: 25rem;
+  height: 25rem;
+  max-width: 25rem;
+  width: 25rem;
+}
+
+.pricing-table-divider {
+  display: block;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.08);
+  max-width: 80%;
+  margin: 20px auto 0;
 }
 
 section {
   padding: 2rem 0;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .strobe {
@@ -88,22 +142,7 @@ section {
   animation: myBounce 2s infinite, myColorStrobe 1s infinite;
 }
 
-.container {
-  margin: auto;
-  width: 90%;
-  max-width: 70.5rem;
-}
-
-.container__narrow {
-  max-width: 35rem;
-}
-
 .split {
-  display: flex;
-  flex-direction: column;
-}
-
-.panel2 {
   display: flex;
   flex-direction: column;
 }
@@ -124,32 +163,6 @@ section {
 }
 .bg-white {
   background-color: var(--color-offwhite);
-}
-
-@media (min-width: 40em) {
-  .split {
-    flex-direction: row;
-  }
-
-  .split > * {
-    flex-basis: 100%;
-  }
-
-  .split > * + * {
-    margin-left: 2em;
-  }
-
-  .panel2 {
-    flex-direction: row-reverse;
-  }
-
-  .panel2 > * {
-    flex-basis: 100%;
-  }
-
-  .panel2 > * + * {
-    margin-right: 2em;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -177,6 +190,10 @@ section {
   }
   .image__container {
     text-align: center;
+  }
+  .feature__panel,
+  .feature__panel__reverse {
+    flex-direction: column;
   }
 }
 

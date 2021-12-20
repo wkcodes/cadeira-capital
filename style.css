@@ -49,6 +49,7 @@ h3 {
 header {
   height: 100vh;
   color: whitesmoke;
+  overflow: hidden;
 }
 
 nav {
@@ -76,7 +77,7 @@ footer {
 }
 
 #hero {
-  padding-top: 28vh;
+  padding-top: 10vh;
   text-align: center;
 }
 
@@ -172,6 +173,20 @@ footer {
   background-color: var(--color-offwhite);
 }
 
+.cadeira--chain {
+  position: relative;
+  max-height: 6rem;
+  margin-bottom: 3rem;
+  animation: 1s coinScroll linear infinite;
+}
+
+.cadeira--chain__reverse {
+  position: relative;
+  max-height: 6rem;
+  margin-top: 4rem;
+  animation: 1s coinScrollReverse linear infinite;
+}
+
 @media (max-width: 1000px) {
   h1 {
     font-size: 1.75rem;
@@ -201,6 +216,24 @@ footer {
   .feature__panel,
   .feature__panel__reverse {
     flex-direction: column;
+  }
+}
+
+@keyframes coinScroll {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(-4.8%);
+  }
+}
+
+@keyframes coinScrollReverse {
+  0% {
+    transform: translateX(-4.8);
+  }
+  100% {
+    transform: translateX(-10%);
   }
 }
 

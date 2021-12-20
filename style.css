@@ -11,6 +11,12 @@
     sans-serif;
 }
 
+/*for testing purposes only*/
+.border {
+  border: dotted;
+  border-color: red;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,9 +33,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 100vh 50vh 50vh 50vh 15vh;
-  border: solid;
-  border-color: red;
+  grid-template-rows: 100vh 30rem;
 }
 
 h1 {
@@ -56,6 +60,11 @@ nav {
   gap: 3vw;
 }
 
+footer {
+  color: whitesmoke;
+  text-align: center;
+}
+
 #logo-container {
   margin-right: auto;
 }
@@ -77,8 +86,8 @@ nav {
 
 .btn {
   font-size: 1.5rem;
-  color: coral;
-  background-color: green;
+  color: black;
+  background-color: pink;
   width: 12rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -87,17 +96,27 @@ nav {
 }
 
 .feature__panel {
+  text-align: center;
   max-width: 70.5rem;
+  min-height: 10vh;
   display: flex;
   flex-direction: row;
   justify-self: center;
+  text-align: center;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .feature__panel__reverse {
+  text-align: center;
   max-width: 70.5rem;
+  min-height: 10vh;
   display: flex;
   flex-direction: row-reverse;
   justify-self: center;
+  text-align: center;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .feature__panel__content__divider {
@@ -127,13 +146,6 @@ nav {
   margin: 20px auto 0;
 }
 
-section {
-  padding: 2rem 0;
-  width: 60%;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 .strobe {
   animation: myColorStrobe 1s infinite;
 }
@@ -145,11 +157,6 @@ section {
 .split {
   display: flex;
   flex-direction: column;
-}
-
-.footer {
-  color: whitesmoke;
-  text-align: center;
 }
 
 .bg-dark {

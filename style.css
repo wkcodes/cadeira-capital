@@ -184,7 +184,7 @@ footer {
   position: relative;
   max-height: 6rem;
   margin-top: 4rem;
-  animation: 1s coinScrollReverse linear infinite;
+  animation: 2s coinScrollReverse linear infinite;
 }
 
 @media (max-width: 1000px) {
@@ -233,7 +233,7 @@ footer {
     transform: translateX(-4.8);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-10.8%);
   }
 }
 

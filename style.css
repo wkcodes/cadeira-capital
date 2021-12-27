@@ -33,7 +33,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 100vh 30rem;
+  grid-template-rows: 100vh;
 }
 
 h1 {
@@ -64,6 +64,7 @@ nav {
 footer {
   color: whitesmoke;
   text-align: center;
+  margin: 2rem;
 }
 
 #logo-container {
@@ -101,8 +102,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-self: center;
+  align-items: center;
   margin: 1rem 1rem;
-  padding: 2rem 2.5rem 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
 }
 
 .feature__panel__reverse {
@@ -111,11 +114,14 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   justify-self: center;
+  align-items: center;
   margin: 1rem 1rem;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
 }
 
-.feature__panel__text_content {
+.feature__panel__text__content {
+  padding: 1.5rem;
 }
 
 .panel-text-body {
@@ -125,10 +131,8 @@ footer {
 }
 
 .panel__img {
-  max-height: 25em;
-  height: 25rem;
-  max-width: 25rem;
-  width: 25rem;
+  max-height: 80%;
+  max-width: 80%;
 }
 
 .split {
@@ -169,7 +173,7 @@ footer {
   }
   h2,
   h3 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   #logo {
     margin: 0.5rem;
@@ -196,15 +200,18 @@ footer {
     display: none;
   }
   .panel__img {
-    max-height: 15em;
-    max-width: 100%;
-  }
-  .image__container {
-    text-align: center;
+    max-height: 50%;
+    max-width: 70%;
+    margin-bottom: 2px;
   }
   .feature__panel,
   .feature__panel__reverse {
+    padding: 0.2rem 0.2rem;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    text-align: center;
+    max-height: 100vh;
   }
   .btn {
     max-height: 3rem;

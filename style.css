@@ -89,9 +89,8 @@ footer {
   font-size: 1.5rem;
   color: black;
   background-color: pink;
-  width: 12rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  max-width: 15rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
   margin-top: 3.5rem;
 }
@@ -116,12 +115,6 @@ footer {
   padding: 1rem 1rem;
 }
 
-.feature__panel__content__divider {
-  margin: 0.5rem;
-  background: var(--color-primary);
-  height: 0.2rem;
-}
-
 .feature__panel__text_content {
 }
 
@@ -136,14 +129,6 @@ footer {
   height: 25rem;
   max-width: 25rem;
   width: 25rem;
-}
-
-.pricing-table-divider {
-  display: block;
-  height: 4px;
-  background: rgba(0, 0, 0, 0.08);
-  max-width: 80%;
-  margin: 20px auto 0;
 }
 
 .split {
@@ -190,6 +175,18 @@ footer {
     margin: 0.5rem;
     width: 9rem;
   }
+  #hero {
+    padding-top: 4vh;
+  }
+  .cadeira--chain {
+    max-height: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .cadeira--chain__reverse {
+    max-height: 3rem;
+    margin-top: 3rem;
+  }
   nav {
     padding-left: 2px;
     margin-left: 4vw;
@@ -200,7 +197,7 @@ footer {
   }
   .panel__img {
     max-height: 15em;
-    max-width: 20em;
+    max-width: 100%;
   }
   .image__container {
     text-align: center;
@@ -208,6 +205,15 @@ footer {
   .feature__panel,
   .feature__panel__reverse {
     flex-direction: column;
+  }
+  .btn {
+    max-height: 3rem;
+    max-width: 8rem;
+    color: black;
+    font-size: 0.9rem;
+    background-color: pink;
+    padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+    margin-top: 2rem;
   }
 }
 

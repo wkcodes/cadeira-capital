@@ -88,12 +88,13 @@ footer {
 
 .btn {
   font-size: 1.5rem;
-  color: black;
-  background-color: pink;
+  color: whitesmoke;
+  background-color: #ff6699;
   max-width: 15rem;
   padding: 1rem 1rem;
-  border-radius: 0.5rem;
-  margin-top: 3.5rem;
+  border-radius: 2rem;
+  margin: 2.5rem 1rem;
+  cursor: pointer;
 }
 
 .feature__panel {
@@ -163,7 +164,7 @@ footer {
 .cadeira--chain__reverse {
   position: relative;
   max-height: 6rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
   animation: 2s coinScrollReverse linear infinite;
 }
 

@@ -87,19 +87,25 @@ footer {
 }
 
 .btn {
-  font-size: 1.5rem;
-  color: whitesmoke;
-  background-color: #ff6699;
-  max-width: 15rem;
+  font-size: 1.3rem;
+  background-color: #db7093;
   padding: 1rem 1rem;
   border-radius: 2rem;
   margin: 2.5rem 1rem;
+  border: none;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: pink;
+  color: grey;
 }
 
 .feature__panel {
+  font-size: 1.5rem;
   max-width: 70.5rem;
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: row;
   justify-self: center;
@@ -110,6 +116,7 @@ footer {
 }
 
 .feature__panel__reverse {
+  font-size: 1.5rem;
   max-width: 70.5rem;
   min-height: 10vh;
   display: flex;
@@ -175,13 +182,14 @@ footer {
   h2,
   h3 {
     font-size: 2rem;
+    margin-top: 1rem;
   }
   #logo {
     margin: 0.5rem;
     width: 9rem;
   }
   #hero {
-    padding-top: 4vh;
+    padding-top: 8vh;
   }
   .cadeira--chain {
     max-height: 3rem;
@@ -190,7 +198,7 @@ footer {
   }
   .cadeira--chain__reverse {
     max-height: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   nav {
     padding-left: 2px;
@@ -201,27 +209,27 @@ footer {
     display: none;
   }
   .panel__img {
-    max-height: 50%;
-    max-width: 70%;
-    margin-bottom: 2px;
+    flex-shrink: 0;
+    height: 12rem;
+    width: 12rem;
+    margin-bottom: 2rem;
   }
   .feature__panel,
   .feature__panel__reverse {
+    font-size: 1rem;
     padding: 0.2rem 0.2rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    max-height: 100vh;
+    max-height: 100%;
   }
   .btn {
-    max-height: 3rem;
-    max-width: 8rem;
     color: black;
-    font-size: 0.9rem;
     background-color: pink;
     padding: 0.6rem 0.7rem 0.6rem 0.7rem;
-    margin-top: 2rem;
+    margin: 2rem 0.2rem;
+    width: max-content;
   }
 }
 
